@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:layout_height="fill_parent">
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/email_prompt"/>
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textEmailAddress"
+    android:id="@+id/email"
+    />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/problem_prompt"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:lines="20"
+        android:minLines="3"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:id="@+id/problem"
+        />
+   <LinearLayout
+       android:weightSum="1.0"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent" android:orientation="horizontal">
+       <Button
+           android:layout_weight=".5"
+           android:layout_width="0dip"
+           android:id="@+id/btn_send"
+           android:layout_height="wrap_content"
+           android:padding="5dp"
+           android:text="@string/send" />
+
+       <Button
+           android:id="@+id/btn_cancel"
+           android:layout_weight=".5"
+           android:layout_width="0dip"
+           android:layout_height="wrap_content"
+           android:padding="5dp"
+           android:text="@string/cancel" />
+   </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Gear2cam"/>
+
+    <title>Gear2cam</title>
+
+  
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/hammer.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+<!--  
+<div class="status">
+	<span id="status" style="padding-left:15px;">Connecting</span>
+</div>
+-->
+
+<div id="statusdiv" style="z-index:9999; text-align:center; color:#FFF; background-color:#000; width:320px; text-align:center; opacity:0.5; position:absolute; top:0">
+		<span id="status" style="padding-left:15px;">Connecting</span>
+</div>
+
+<div class="toast" id="toast">
+</div>
+
+ 
+<div id="layoutInfo">
+	<div style="padding-top:80px; text-align:center;">
+		<div id="startupCountdown" style="text-align:center; font-size:500%;">10</div>
+		<span id="status2" style="padding-left:15px;">Loading...</span>
+	</div>
+</div>
+
+<div id="layoutPortrait" style="display:none; width:100%;">
+	<table style="width:100%;">
+		<tr>
+			<td style="width:218;">
+				<img id="imgPortrait" height="320" width="240"/>
+			</td>
+			<td style="text-align:center; vertical-align:top; width:80px;">
+				<br/>
+				<a href="#" onclick="clickPhoto(true);">
+					<img src="camera.png" width="70"  />
+				</a>
+				<br/>
+				<a href="#" onclick="showTimer();">
+					<img src="timer.png" width="70"  />
+				</a>
+				<br/>
+				<a href="#" onclick="setFlashMode();">
+					<img id="flash-portrait" src="flash-auto.png" width="70"  />
+				</a>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="layoutLandscape" style="display:none; width:100%;">
+	<table style="width:100%">
+		<tr>
+			<td><img id="imgLandscape" width="320" height="240"/></td>
+		<tr>
+		<tr>
+			<td style="vertical-align:top; text-align:center;">
+				<a href="#" onclick="clickPhoto(true);">
+					<img src="camera.png" width="70"  />
+				</a>
+				&nbsp;&nbsp;&nbsp;
+				<a href="#" onclick="showTimer()">
+					<img src="timer.png" width="70" />
+				</a>
+				&nbsp;
+				<a href="#" onclick="setFlashMode()">
+					<img id="flash-landscape" src="flash-auto.png" width="70" />
+				</a>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="sharePortrait" style="display:none; color:#FFF; position:absolute; top:0px; left:0px; width:320px; height: 320px; z-index:9999; background-color:#000; opacity:1; font-size:80%;">
+	<table style="width:100%;">
+		<tr>
+			<td colspan="2" style="text-align:center;">Share on Facebook?</td>
+		</tr>
+		<tr>
+			<td style="width:220; vertical-align:center;">
+				<img id="imgSharePortrait" height=280 width="210"/>
+			</td>
+			<td style="text-align:center; vertical-align:top; width:80px;">
+				<br/>
+				<a href="#" onclick="share(true);">
+					<img src="tick.png" width="70"  />
+				</a>
+				<br/>
+				<br/>
+				<a href="#" onclick="share(false);">
+					<img src="cross.png" width="70"  />
+				</a>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="shareLandscape" style="display:none; position:absolute; top:0px; left:0px; width:320px; height: 320px; z-index:9999; color:#FFF; background-color:#000; opacity: 1; font-size:80%;">
+	<table style="width:100%">
+		<tr>
+			<td style="text-align:center;">
+				Share on Facebook?
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center;">
+				<img id="imgShareLandscape" width="266" height="200"/>
+			</td>
+		<tr>
+		<tr>
+			<td style="vertical-align:top; text-align:center;">
+				<a href="#" onclick="share(true);">
+					<img src="tick.png" height="70"  />
+				</a>
+				&nbsp;&nbsp;&nbsp;
+				<a href="#" onclick="share(false)">
+					<img src="cross.png" height="70" />
+				</a>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="timerValues" style="display:none; position:absolute; top:36px; left:0px; width:320px; height: 284px; z-index:9999; background-color:#000; opacity: 0.95; font-size:150%;">
+	<table>
+		<tr>
+			<td colspan="2">
+				<input id="timer-choice-1" type="radio" name="timer" value="2" checked>
+				<label for="timer-choice-1">2 secs</label>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input id="timer-choice-2" type="radio" name="timer" value="5">
+				<label for="timer-choice-2">5 secs</label>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input id="timer-choice-3" type="radio" name="timer" value="10">
+				<label for="timer-choice-3">10 sec</label>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50%"><button style="width:100%;" onclick="clickPhoto()">Start</button></td>
+			<td style="width:50%"><button style="width:100%;" onclick="showTimer()">Cancel</button></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

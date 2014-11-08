@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gear2cam</string>
+    <string name="instructions">Gear2cam allows you to remotely control your phone\'s camera.</string>
+    <string name="instructions2">Now taking selfies and \'pro\' photos using a tripod is very easy.</string>
+    <string name="instructions3">To start, please login with Facebook on the next screen.</string>
+    <string name="action_report_a_bug">Customer Support</string>
+    <string name="login">Enable Facebook</string>
+    <string name="app_id">YOUR_FACEBOOK_APP_ID</string>
+    <string name="permission_checkbox">Do not show this again</string>
+    <string name="permission_title">Attention</string>
+    <string name="permission_message">Can we post your photos to your Facebook? We will always ask you first!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="title_activity_logged_in">LoggedInActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="click">Clicked</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logging_in">Logging in...</string>
+    <string name="authenticated_title">Gear2Cam</string>
+    <string name="authenticated_noconnection">To start, please launch the Gear2cam app on your watch.</string>
+    <string name="login_option">Login above if you want to post to Facebook from your watch</string>
+    <string name="title_activity_camera">Gear2Cam Camera</string>
+    <string name="facebook_login_failed_title">Unable to login</string>
+    <string name="face_login_failed_content">Are you sure you are connected to the internet?</string>
+    <string name="ok">OK</string>
+    <string name="facebook_post_description">Uploaded using Gear2cam - http://www.gear2cam.com</string>
+    <string name="logout">Logout</string>
+    <string name="publish_prompt">Ask me to post photo to Facebook after a click</string>
+    <string name="no_gear">This app only works with the Samsung Galaxy Gear 2 smart watch and a supported Samsung phone. Please make sure your watch is paired with this phone via the Gear Manager app.</string>
+    <string name="gallery_prompt">Note: You can view your hi-res images through the Gallery app</string>
+    <string name="website">http://www.gear2cam.com</string>
+    <string name="twitter">Twitter: \@gear2camapp</string>
+    <string name="facebook">https://www.facebook.com/gear2cam</string>
+    <string name="eula_title">Gear2cam EULA</string>
+    <string name="accept">Accept</string>
+    <string name="problems">support@gear2cam.com</string>
+    <string name="eula">By using this software (and clicking the \"Accept\" button below) you are:\n\n
+        1. Agreeing to our \"Do no evil\" Privacy Policy and other legal matters that can be found at:\n
+        http://www.gear2cam.com/privacy.html\n\n
+        2. Acknowledging that you are above 13 years of age and that this application may be dangerous for
+        children to use.\n\n
+        3. Agreeing that you will ONLY use the application in the context of privacy laws and other laws
+        as applicable in your country of use.\n\n
+        4. Agreeing that you will ONLY use the application for personal and non-commercial use
+        (for a commercial use license, please contact us at support@gear2cam.com).\n\n
+        \n
+        A perpetual, non-transferable, irrevocable license is hereby given to you to use this software free of charge provided the above 4 conditions are met.\n\n
+        \n
+        This app \"Gear2cam\" and the associated website http://www.gear2cam.com are both subject to the following copyright notice:\n
+        © Copyright 2014 Varun Chatterji</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="email_prompt">What\'s your email?</string>
+    <string name="problem_prompt">Type your comments below</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="support_prompt">Gear2cam Support</string>
+    <string name="invalid_email">You entered an invalid email</string>
+    <string name="no_comment">Please enter some text as your comment</string>
+    <string name="comment_thanks">Thank you for your comment!</string>
+    <string name="comment_offiline_prompt">Could not send your comment, are you online?</string>
+    <string name="comment_failed"> - Comment sending failed</string>
+    <string name="comment_failure_detail">Failed to send comment to server. Are you online?</string>
+    <string name="title_activity_invisible_preview">InvisiblePreviewActivity</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

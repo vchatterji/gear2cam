@@ -1,0 +1,34 @@
+apply plugin: 'android'
+
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.1.0'
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 19
+        versionCode 12
+        versionName '1.3.1'
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':facebook')
+    compile files('libs/Parse-1.5.0/Parse-1.5.0.jar')
+    compile project(':AndroidBootstrap')
+    compile project(':cwac-camera')
+    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.android.support:appcompat-v7:19.+'
+}

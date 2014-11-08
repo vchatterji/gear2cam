@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.gear2cam.official.LoginFragmentPortrait">
+
+    <TextView
+        android:id="@+id/instructionsOrLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:fontFamily="fonts/FjallaOne-Regular.ttf"
+        android:shadowColor="@color/Shadow"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textColor="@color/White"
+        android:paddingTop="@dimen/activity_vertical_margin_large"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/instructionsOrLink2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_gear"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:textColor="@color/White"
+        android:shadowColor="@color/Shadow"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>

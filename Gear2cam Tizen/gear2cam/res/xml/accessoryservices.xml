@@ -1,0 +1,21 @@
+<resources>
+    <application name="Gear2cam (original) Consumer" >
+        <serviceProfile
+            id="/system/gear2camoriginal"
+            name="Gear2cam (original)"
+            role="consumer"
+            version="2.0" >
+            <supportedTransports>
+                <transport type="TRANSPORT_BT" />
+            </supportedTransports>
+
+            <serviceChannel
+                id="127"
+                dataRate="high"
+                priority="high"
+                reliability="enable" >
+            </serviceChannel>
+        </serviceProfile>
+    </application>
+
+</resources>

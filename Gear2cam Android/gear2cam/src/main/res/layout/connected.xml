@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/connectedTextView"
+        android:layout_width="fill_parent"
+        android:textColor="@color/white"
+        android:shadowColor="@color/Shadow"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="@string/connected"
+        android:gravity="center"
+        android:layout_height="fill_parent" />
+</LinearLayout>
